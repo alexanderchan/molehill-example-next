@@ -26,6 +26,7 @@ export default function Home() {
               color: 'white',
               backgroundColor: 'blue-500',
               borderRadius: 'md',
+              display: 'flex',
               // need to fix ternaries to know parent property name
               // mx: true ? '1' : '2',
             })
@@ -33,6 +34,11 @@ export default function Home() {
         >
           This is a test
         </div>
+        <div
+          className={css({
+            display: 'flex',
+          })}
+        ></div>
       </div>
     </Theme>
   )
