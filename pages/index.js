@@ -14,7 +14,6 @@ function Theme({ children }) {
 }
 
 export default function Home() {
-  const active = true
   return (
     <Theme>
       <div className={styles.container}>
@@ -22,16 +21,16 @@ export default function Home() {
           className={css(
             mh({
               border: '1px solid',
-              // need to fix ternaries to know parent property name
-              // mx: active ? '1' : '2',
               p: '3',
               color: 'white',
               backgroundColor: 'blue-500',
               borderRadius: 'md',
+              // need to fix ternaries to know parent property name
+              // mx: true ? '1' : '2',
             })
           )}
         >
-          test
+          This is a test
         </div>
       </div>
     </Theme>
