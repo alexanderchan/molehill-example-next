@@ -11,6 +11,7 @@ const {
 
 function Theme({ children }) {
   return <div className={css(cssVars)}>{children}</div>
+  // return <div style={{...cssVars}}>{children}</div>
 }
 
 export default function Home() {
