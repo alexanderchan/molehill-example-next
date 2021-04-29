@@ -1,4 +1,4 @@
 {
   "presets": ["next/babel"],
-  "plugins": ["@molehill-ui"]
+  "plugins": ["babel-plugin-macros", "@molehill-ui"]
 }
