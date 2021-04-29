@@ -5,9 +5,7 @@ import { css } from '@emotion/css'
 import { mh } from '@molehill-ui/babel-plugin/macro'
 import { createCssTheme } from '@molehill-ui/theme'
 
-const {
-  config: { cssVars },
-} = createCssTheme()
+const { cssVars } = createCssTheme()
 
 function Theme({ children }) {
   return <div className={css(cssVars)}>{children}</div>
