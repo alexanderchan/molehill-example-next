@@ -10,5 +10,5 @@
       }
     ]
   ],
-  "plugins": ["babel-plugin-macros", "@molehill-ui", "@emotion/babel-plugin"]
+  "plugins": ["@molehill-ui", "@emotion/babel-plugin"]
 }
