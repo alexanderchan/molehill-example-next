@@ -20,13 +20,15 @@ export default function Home() {
           className={css(
             mh({
               border: '1px solid',
+              // border: '1px solid blue-500',
               p: '3',
+              px: 4,
               color: 'white',
               backgroundColor: 'blue-500',
               borderRadius: 'md',
               display: 'flex',
-              // need to fix ternaries to know parent property name
-              // mx: true ? '1' : '2',
+              fontWeight: 'bold',
+              mx: false ? '1' : 2,
             })
           )}
         >
