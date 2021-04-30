@@ -51,18 +51,13 @@ export default function Home() {
           This is a test
         </div>
         <div
-          className={css({
-            display: 'flex',
-            mx: '',
-          })}
           css={{
-            color: 'blue-300',
-            px: '1',
-            md: {
-              display: 'flex',
-            },
+            color: 'blue-600',
+            p: '4',
           }}
-        ></div>
+        >
+          emotion time
+        </div>
       </div>
     </Theme>
   )

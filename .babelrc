@@ -1,4 +1,14 @@
 {
-  "presets": ["next/babel"],
-  "plugins": ["babel-plugin-macros", "@molehill-ui"]
+  "presets": [
+    [
+      "next/babel",
+      {
+        "preset-react": {
+          "runtime": "automatic",
+          "importSource": "@emotion/react"
+        }
+      }
+    ]
+  ],
+  "plugins": ["babel-plugin-macros", "@molehill-ui", "@emotion/babel-plugin"]
 }
