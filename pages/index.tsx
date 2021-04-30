@@ -19,16 +19,28 @@ export default function Home() {
         <div
           className={css(
             mh({
-              border: '1px solid',
-              // border: '1px solid blue-500',
+              display: 'flex',
+
+              mx: false ? '1' : 2,
               p: '3',
               px: 4,
+
+              border: '1px solid',
+              borderColor: 'blue-100',
+              // border: '1px solid blue-500',
               color: 'white',
-              backgroundColor: 'blue-500',
+              // backgroundColor: 'blue-500',
+              background: 'red-400',
               borderRadius: 'md',
-              display: 'flex',
+              boxShadow: 'lg',
               fontWeight: 'bold',
-              mx: false ? '1' : 2,
+              '@media:sm': {
+                background: 'red-400',
+              },
+              md: {
+                backgroundImage:
+                  'linear-gradient(to right, --color-blue-400, --color-indigo-800)',
+              },
             })
           )}
         >
