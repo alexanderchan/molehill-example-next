@@ -3,7 +3,11 @@ import styles from '../styles/Home.module.css'
 import { css } from '@emotion/css'
 import { createCssTheme } from '@molehill-ui/theme'
 
-const { cssVars } = createCssTheme()
+const { cssVars } = createCssTheme({
+  config: {
+    prefix: 'a',
+  },
+})
 
 function Theme({ children }) {
   return <div className={css(cssVars)}>{children}</div>
@@ -24,12 +28,12 @@ export default function Home() {
             border: '1px solid --color-blue-100',
             // borderColor: 'blue-100',
             color: 'white',
-            background: 'gray-600',
+            bg: 'blue-500',
             borderRadius: 'md',
             boxShadow: 'lg',
             fontWeight: 'bold',
             '@media:sm': {
-              background: 'gray-600',
+              background: 'blue-500',
             },
             md: {
               backgroundImage:
@@ -43,6 +47,7 @@ export default function Home() {
         >
           emotion time
         </div>
+        <div style={{ color: 'blue-500' }}>style only</div>
       </div>
     </Theme>
   )
