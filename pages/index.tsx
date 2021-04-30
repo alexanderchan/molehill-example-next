@@ -1,3 +1,5 @@
+/// <reference types="@emotion/react/types/css-prop" />
+
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
@@ -25,21 +27,23 @@ export default function Home() {
               p: '3',
               px: 4,
 
-              border: '1px solid',
-              borderColor: 'blue-100',
-              // border: '1px solid blue-500',
+              border: '1px solid --color-blue-100',
+              // borderColor: 'blue-100',
               color: 'white',
-              // backgroundColor: 'blue-500',
-              background: 'red-400',
+              background: 'gray-600',
               borderRadius: 'md',
               boxShadow: 'lg',
               fontWeight: 'bold',
               '@media:sm': {
-                background: 'red-400',
+                background: 'gray-600',
               },
               md: {
                 backgroundImage:
                   'linear-gradient(to right, --color-blue-400, --color-indigo-800)',
+              },
+              '@media:xl': {
+                backgroundImage:
+                  'linear-gradient(to right, --color-red-400, --color-indigo-800)',
               },
             })
           )}
@@ -49,7 +53,15 @@ export default function Home() {
         <div
           className={css({
             display: 'flex',
+            mx: '',
           })}
+          css={{
+            color: 'blue-300',
+            px: '1',
+            md: {
+              display: 'flex',
+            },
+          }}
         ></div>
       </div>
     </Theme>
