@@ -1,3 +1,7 @@
+@import 'molehill-ui/base';
+@import 'molehill-ui/variables';
+@import './test.css';
+
 html,
 body {
   padding: 0;

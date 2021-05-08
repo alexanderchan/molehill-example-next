@@ -2,7 +2,7 @@ const { createCssTheme } = require('@molehill-ui/theme')
 
 const theme = createCssTheme({
   config: {
-    prefix: 'a',
+    // prefix: 'a',
   },
 })
 

@@ -5,7 +5,7 @@ import { createCssTheme } from '@molehill-ui/theme'
 
 const { cssVars } = createCssTheme({
   config: {
-    prefix: 'a',
+    // prefix: 'a',
   },
 })
 
