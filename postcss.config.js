@@ -1,3 +1,3 @@
 module.exports = {
-  plugins: [require('postcss-import'), require('@molehill-ui/postcss-plugin')],
+  plugins: ['postcss-import', '@molehill-ui/postcss-plugin'],
 }
